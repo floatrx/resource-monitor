@@ -1,0 +1,8 @@
+# Private files
+_private
+
+# Logs
+yarn-error.log
+
+# Build
+dist
