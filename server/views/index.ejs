@@ -3,7 +3,11 @@
 <section class="fancy-section">
     <div class="container">
         <h1><span class="status-ok"></span> Server is running</h1>
-        <p>This file rendered from <code>index.ejs</code></p>
+        <% if (bot) { %>
+            <p>Interact with the bot: 🤖 <a href="https://t.me/<%= bot %>">@<%= bot.username %></a> </p>
+        <% } %>
+        <p>This file rendered from <code>views/index.ejs</code></p>
+        <p>App version: <code><%= appVersion %></code></p>
     </div>
 </section>
 <%- include('partials/footer') %>
